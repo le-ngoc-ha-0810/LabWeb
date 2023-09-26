@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout2</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        #container {
+            padding-top: 2px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        #container header {
+            height: 100px;
+            border: 1px solid black;
+            display: flex; /* Sử dụng Flexbox để căn chỉnh nội dung */
+            justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+            align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+        }
+
+        #container nav {
+            height: 40px;
+            display: flex; /* Sử dụng Flexbox để căn chỉnh nội dung */
+            justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+            align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        #container #content {
+            overflow: auto;
+            border: 1px solid black;
+            height: 200px;
+            display: flex;
+        }
+
+        #container #content #left-content {
+            width: 25%;
+            height: 200px;
+            border-right: 1px solid black;
+            float: left;
+            display: flex;
+            justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+            align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+            clear: right;
+        }
+
+        #container #content #right-content {
+            width: 75%;
+            height: 200px;
+            display: flex; /* Sử dụng Flexbox để căn chỉnh nội dung */
+            justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+            align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+        }
+
+        #container footer {
+            height: 100px;
+            border: 1px solid black;
+            border-top: none;
+            display: flex;
+            justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+            align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <header>
+        <p>Header Section</p>
+    </header>
+    <nav>
+        <p>Navigation Bar</p>
+    </nav>
+    <section id="content">
+        <div id="left-content">
+            <p>Index</p>
+        </div>
+        <div id="right-content">
+            <p>Content</p>
+        </div>
+    </section>
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</div>
+
+</body>
+</html>

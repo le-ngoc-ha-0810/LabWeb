@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout3</title>
+  <style>
+    h1{font-size: 30px}
+    h2{font-size: 25px}
+    h3{font-size: 22px}
+    body{
+      margin: auto;
+    }
+    a{
+      margin: 0;
+    }
+    #container {
+      width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    #container header{
+      height: 120px;
+      background-color: #c4996c;
+      color: white;
+      border: 1px solid black;
+      padding-top: 1px;
+      margin-top:2px ;
+
+    }
+    #container #image{
+      height: 400px;
+      background-color: #a8a9ad;
+      color: white;
+      border: 1px solid black;
+      margin-top: 15px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      box-sizing: border-box;
+    }
+    #container #content{
+      overflow: auto;
+      min-height: 500px;
+    }
+    #container #content #title{
+      margin-top: 20px;
+    }
+    #container #content .item{
+      width: 180px;
+      height: 220px;
+      font-size: 20px;
+      color: white;
+      float: left;
+      clear: right;
+      background-color: #a8a9ad;
+      margin: 20px 40px 40px 40px;
+      padding: 18px;
+      text-align: center;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center; /* Căn chữ theo chiều ngang (giữa) */
+      align-items: center; /* Căn chữ theo chiều dọc (giữa) */
+
+    }
+    #container footer {
+      height: 120px;
+      background-color: #115d7f;
+      color: white;
+      border: 1px solid black;
+
+
+    }
+  </style>
+</head>
+<body>
+<div id="container">
+  <header>
+    <h2>Header section </h2>
+    <h3>900px - 120px</h3>
+  </header>
+  <div id="image">
+    <h2>Company Image</h2>
+    <h3>900px - 400px</h3>
+    <h4>designed by - gdatamart.com</h4>
+  </div>
+  <section id="content">
+    <div id="title"><h1>Our Services</h1></div>
+    <div>
+      <div class="item">Service</div>
+      <div class="item">Service</div>
+      <div class="item">Service</div>
+      <div class="item">Service</div>
+      <div class="item">Service</div>
+      <div class="item">Service</div>
+    </div>
+  </section>
+  <footer>
+    <h2>Footer section</h2>
+    <h3>900px - 120px</h3>
+  </footer>
+</div>
+</body>
+</html>
