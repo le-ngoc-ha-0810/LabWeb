@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex; /* Thay đổi thành flex để các nút nằm ngang */
+    flex-wrap: wrap; /* Cho phép nút xuống dòng khi không đủ không gian */
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Điều chỉnh chiều rộng của container tùy ý */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin: 5px; /* Thêm khoảng cách giữa các nút */
+}

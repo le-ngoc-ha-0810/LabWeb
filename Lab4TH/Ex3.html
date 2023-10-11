@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+    <script>
+        function welcome() {
+            const loi_chao = ["Hello World", "Welcome to my page", "Nice to meet you", "Good morning!", "Hello"];
+            var len = loi_chao.length;
+            var rdNumber = Math.floor(Math.random() * len);
+            document.getElementById("show").innerHTML = loi_chao[rdNumber];
+        };
+
+    </script>
+</head>
+<body onload="welcome()">
+<div id="show"></div>
+</body>
+</html>

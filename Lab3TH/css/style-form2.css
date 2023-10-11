@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    width: 100%;
+}
+
+#page #form_signIn #form-bg {
+    position: absolute;
+    z-index: 1;
+}
+
+#page #form_signIn #form-bg img {
+    margin: 0;
+    padding: 0;
+}
+
+#page #form_signIn #form-content {
+    position: absolute;
+    z-index: 2;
+    margin-left: 600px;
+}
+
+#page #form_signIn #form-content .container {
+    width: 280px;
+    height: 500px;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 5px;
+    padding: 75px 45px 25px;
+    text-align: center;
+}
+
+#page #form_signIn #form-content .container h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    color: #644369;
+}
+
+#page #form_signIn .form_input_group .input-group-control input {
+    height: 53px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #f1f1f1;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#page #form_signIn .form_input_group .btn-signIn {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    color: white;
+    border: none;
+    background-color: #bd59d7;
+    box-shadow: 0px 0px 20px #e7c6f3;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#page #form_signIn .form_input_group .btn-signIn:hover {
+    background-color: #b818e2;
+}
+
+#page #form-content #txt-loginWith {
+    text-align: center;
+    color: #b1b1b1;
+}
+
+#page #form_signIn #icon-socs {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#page #form_signIn #icon-socs div {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 20px #e7c6f3;
+    display: inline-block;
+}
+
+#page #form_signIn #icon-socs .fa-facebook-f {
+    color: #4267b2;
+    font-size: 25px;
+    margin: 7px;
+}
+
+#page #form_signIn #icon-socs .fa-google {
+    color: #EA4335;
+    font-size: 25px;
+    margin: 7px;
+}
+
+#page #form_signIn #form-content #sign_up {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#page #form_signIn #form-content #sign_up a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: #644369;
+    font-size: 17px;
+}

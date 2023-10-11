@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotation Example</title>
+    <style>
+        #image-container {
+            text-align: center;
+            margin-top: 100px; /* Để căn giữa theo chiều dọc */
+        }
+
+        #rotate-image {
+            width: 200px; /* Kích thước của hình ảnh */
+            transition: transform 0.5s; /* Hiệu ứng xoay */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="image-container">
+    <img id="rotate-image" src="/image/bg-signIn.jpg" alt="Tấm hình bg">
+</div>
+
+<script>
+    $(document).ready(function () {
+        var currentRotation = 0; // Góc xoay hiện tại
+
+        function rotateImage() {
+            currentRotation += 15; // Tăng góc xoay thêm 15 độ sau mỗi lần xoay
+            $('#rotate-image').css('transform', 'rotate(' + currentRotation + 'deg)');
+        }
+        setInterval(rotateImage, 2000); // Sau mỗi 2 giây, gọi hàm rotateImage
+    });
+</script>
+</body>
+</html>

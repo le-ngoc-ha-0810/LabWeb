@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        #page {
+            width: 100%;
+        }
+
+        #page .container {
+            width: 1200px;
+            margin: 10px auto;
+            text-align: center;
+            background-color: #efac92;
+        }
+
+        .container input {
+            height: 20px;
+            width: 300px;
+            margin-top: 10px;
+        }
+
+        .container p, h3 {
+            margin-top: 10px;
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px 15px;
+        }
+    </style>
+    <script>
+        function compute() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = parseFloat(document.getElementById("c").value);
+            var result1, result2;
+
+            var showResult = document.getElementById("show");
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                showResult.innerHTML = "Vui lòng nhập số hợp lệ cho a, b, và c.";
+            } else {
+                if (a === 0) {
+                    showResult.innerHTML = "Không phải phương trình bậc 2";
+                } else {
+                    var alpha = Math.pow(b, 2) - (4 * a * c);
+                    if (alpha < 0) {
+                        showResult.innerHTML = "Vô nghiệm";
+                    } else if (alpha === 0) {
+                        result1 = result2 = -b / (2 * a);
+                        showResult.innerHTML = "x1 = x2 = " + result1;
+                    } else {
+                        result1 = (-b + Math.sqrt(alpha)) / (2 * a);
+                        result2 = (-b - Math.sqrt(alpha)) / (2 * a);
+                        showResult.innerHTML = "x1 = " + result1 + ", x2 = " + result2;
+                    }
+                }
+            }
+        }
+    </script>
+    </script>
+</head>
+<body>
+<div id="page">
+    <div class="container">
+        <h3>Giải phương trình bậc 2</h3>
+        <input id="a" type="text" placeholder="Nhập giá trị a"><br>
+        <input id="b" type="text" placeholder="Nhập giá trị b"><br>
+        <input id="c" type="text" placeholder="Nhập giá trị c"><br>
+        <button onclick="compute()">Tính</button>
+        <div id="result">
+            <p>Kết quả:</p>
+            <div id="show"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

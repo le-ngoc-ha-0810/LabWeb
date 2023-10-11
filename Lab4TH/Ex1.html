@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập 1</title>
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-family: Arial;
+    }
+
+    #page {
+      width: 100%;
+    }
+
+    #page .container {
+      width: 1200px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    #page .container .btn-event {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bolder;
+      background: white;
+      margin-right: 10px;
+    }
+
+    #page .container #btnRed {
+      color: red;
+      border: 1px solid red;
+    }
+
+    #page .container #btnRed:hover {
+      color: white;
+      background-color: red;
+      cursor: pointer;
+    }
+
+    #page .container #btnOrange {
+      color: orange;
+      border: 1px solid orange;
+    }
+
+    #page .container #btnOrange:hover {
+      color: white;
+      background-color: orange;
+      cursor: pointer;
+    }
+
+    #page .container #btnBlue {
+      color: blue;
+      border: 1px solid blue;
+    }
+
+    #page .container #btnBlue:hover {
+      color: white;
+      background-color: blue;
+      cursor: pointer;
+    }
+
+    #page .container #btnGreen {
+      color: green;
+      border: 1px solid green;
+    }
+
+    #page .container #btnGreen:hover {
+      color: white;
+      background-color: green;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div id="page">
+  <div class="container">
+    <input type="button" id="btnRed" class="btn-event" value="Red" onclick="document.body.style.backgroundColor='red'">
+    <input type="button" id="btnOrange" class="btn-event" value="Orange" onclick="document.body.style.backgroundColor='orange'">
+    <input type="button" id="btnBlue" class="btn-event" value="Blue" onclick="document.body.style.backgroundColor='blue'">
+    <input type="button" id="btnGreen" class="btn-event" value="Green" onclick="document.body.style.backgroundColor='green'">
+  </div>
+</div>
+</body>
+</html>
